@@ -7,6 +7,10 @@ class Genre
     @@all << self 
   end 
   
+  def self.all 
+    @@all 
+  end 
+  
   def new_song(name, artist)
     song = Song.(name, artist, self)
     song.genre = self
